@@ -18,6 +18,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_login_clicked()
 {
+    qDebug() << "Login Clicked";
     QPoint mainWindowCenter = this->geometry().center();
     QPoint dialogTopLeft = mainWindowCenter - QPoint(dialog->width() / 2, dialog->height() / 2);
     dialog->move(dialogTopLeft);
@@ -39,12 +40,14 @@ void MainWindow::Advmodeclicked()
 
 void MainWindow::on_pushButton_4_clicked() //back emg mode
 {
+    qDebug() << "back to home";
     ui->stackedWidget->setCurrentIndex(0);
 }
 
 
 void MainWindow::on_pushButton_5_clicked()  //back adv mode
 {
+     qDebug() << "back to home111";
      ui->stackedWidget->setCurrentIndex(0);
 }
 
