@@ -30,16 +30,19 @@ Dialog::~Dialog()
 void Dialog::on_pushButton_clicked()
 {
     ui->stackedWidget->setCurrentIndex(1);
+    qDebug() << "Page 1 is clicked";
 }
 
 void Dialog::on_pushButton_2_clicked()
 {
     ui->stackedWidget->setCurrentIndex(2);
+    qDebug() << "Page 2 is clicked";
 }
 
 
 void Dialog::on_back_clicked()
 {
+    qDebug() << "back button clicked";
     this->close();
 }
 
